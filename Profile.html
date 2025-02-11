@@ -18,7 +18,7 @@
 <body class="bg-gray-100 text-black h-screen">
   <div class="flex h-screen">
     <!-- Sidebar -->
-    <div class="bg-white shadow-lg rounded-r-lg block w-24 lg:w-64 p-6">
+    <div class="bg-white shadow-lg rounded-r-lg hidden lg:block w-24 lg:w-64 p-6">
       <nav>
         <ul>
           <li class="mb-4">
@@ -59,6 +59,42 @@
 
     <!-- Main Content -->
     <div class="flex flex-col w-full">
+      <nav class="pt-12 w-full lg:hidden flex flex-row">
+        <ul class="bg-white rounded-full shadow-sm mx-auto w-full px-6 py-2 max-w-45 flex flex-row justify-between items-center">
+           <li class="">
+              <a href="./index.html" class="flex items-center text-black font-bold lg:p-3">
+                <div class="mx-auto lg:mx-0 rounded-xl lg:mr-2">
+                    <img src="./public/images/LogoSidebar.svg"/>
+                </div>
+                 <p class="hidden lg:block">
+                    PruebaTecnicaPulp
+                </p>
+              </a>
+            </li>  
+          <li class="">
+            <a href="./Profile.html" class="flex items-center text-black font-bold  shadow-md lg:p-3 bg-white rounded-xl">
+              <div class="mx-auto lg:mx-0 bg-[#4F94D1] rounded-xl p-2 lg:mr-2">
+                <svg class="w-6 h-6" fill="#FFFF" stroke="#FFFFF" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+              </div>
+              <p class="hidden lg:block">
+                Profile
+              </p>
+            </a>
+          </li>
+          <li class="">
+            <a href="./Dashboard.html" class="flex items-center text-gray-600 hover:text-gray-800 font-bold rounded-lg p-3">
+              <svg class="w-6 h-6 lg:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+              <p class="hidden lg:block">
+                Dashboard
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
       <div class="flex-1 m-4 rounded lg:px-4 sm:px-6 relative h-96 min-h-96 max-h-[300px] bg-cover bg-center" style="background-image: url('./public/images/profile-bg.svg');">
         <div class="px-5 absolute inset-x-0 top-60 w-full">
           <div class="max-w-[1598px] bg-white rounded-lg shadow-lg p-2 lg:p-6 w-full">
