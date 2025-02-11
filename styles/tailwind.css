@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
+
+@layer base{
+    @font-face{
+        font-family: 'Alata';
+        font-style: normal;
+        font-weight: 400;
+        font-display: auto;
+        src:url('/public/fonts/Alata-Regular.ttf') format('truetype');
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+@theme{
+    --font-family-Alata: "Alata","sans-serif";
+}

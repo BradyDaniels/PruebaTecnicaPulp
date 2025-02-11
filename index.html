@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles/output.css" rel="stylesheet">
+</head>
+<body class="w-full h-screen flex justify-center items-center">
+   <section class="bg-white w-full h-screen flex flex-col-reverse lg:flex-row justify-center items-center">
+        <div class="w-full lg:max-w-[50%] flex justify-center items-center h-[580px] lg:h-screen">
+            <div class="w-full max-w-[335px] flex flex-col space-y-[18px] justify-start items-center">
+                <div class="w-full flex flex-col">
+                <h1 class="font-Alata text-[#4F94D1] text-[32px]">
+                    Welcome Back
+                </h1>
+                <p class="font-Alata text-[#A0AEC0] text-[14px]">
+                    Enter your email and password to sign in
+                </p>
+                </div>
+                <div class="space-y-[12px] w-full flex flex-col">
+                <div class=" w-full flex flex-col">
+                    <p class="ml-[5.5px] mb-[5.5px] font-Alata font-bold text-black text-[14px]">
+                        Email
+                    </p>
+                    <input
+                        type="email"
+                        class="font-Alata w-full px-4 py-3 border-[2px] border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Your email address"
+                        />
+                </div>
+                <div class=" w-full flex flex-col">
+                        <p class="ml-[5.5px] mb-[5.5px] font-Alata font-bold text-black text-[14px]">
+                        Password
+                        </p>
+                        <input
+                        type="password"
+                        class="font-Alata w-full px-4 py-3 border-[2px] border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Your password"
+                        />
+                    </div>
+                    <div class="mt-[24px] flex items-center">
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-100 rounded-full peer-focus:ring-4  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#4F94D1]"></div>
+                        <span class="ml-3 text-sm font-medium text-black">Remember me</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center items-center">
+                    <div class="w-full max-w-md">
+                    <a href="./Dashboard.html" class="cursor-pointer bg-[#4F94D1] hover:bg-[#3e7599] text-white font-alata font-bold py-2 px-4 rounded w-full">
+                        SIGN IN
+                    </a>
+                    <div class="text-[#A0AEC0] font-alata mt-4">
+                        Don't have an account? <a href="./Sign-Up.html" class="text-[#4F94D1] hover:underline">Sign up</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="relative w-full lg:max-w-[50%] h-[315px] lg:h-screen">
+            <img class="object-cover w-full h-full" src="./public/images/signin-bg.svg"/>
+            <img class="inset-y-0 lg:inset-y-[35%] inset-x-0 mx-auto absolute w-[15rem] lg:w-[30rem] h-[174px]" src="./public/images/Logo.svg"/>
+         </div>
+   </section>
+</body>
+</html>

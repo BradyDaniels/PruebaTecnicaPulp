@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="./styles/output.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Alata', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-black h-screen">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="bg-white shadow-lg rounded-r-lg block w-24 lg:w-64 p-6">
+      <nav>
+        <ul>
+          <li class="mb-4">
+            <a href="./index.html" class="flex items-center text-black font-bold lg:p-3">
+              <div class="mx-auto lg:mx-0 rounded-xl lg:mr-2">
+                 <img src="./public/images/LogoSidebar.svg"/>
+              </div>
+              <p class="hidden lg:block">
+                PruebaTecnicaPulp
+              </p>
+            </a>
+          </li>
+          <li class="mb-4">
+            <a href="./Profile.html" class="flex items-center text-black font-bold  shadow-md lg:p-3 bg-white rounded-xl">
+              <div class="mx-auto lg:mx-0 bg-[#4F94D1] rounded-xl p-2 lg:mr-2">
+                <svg class="w-6 h-6" fill="#FFFF" stroke="#FFFFF" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+              </div>
+              <p class="hidden lg:block">
+                Profile
+              </p>
+            </a>
+          </li>
+          <li class="mb-4">
+            <a href="./Dashboard.html" class="flex items-center text-gray-600 hover:text-gray-800 font-bold rounded-lg p-3">
+              <svg class="w-6 h-6 lg:mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+              <p class="hidden lg:block">
+                Dashboard
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex flex-col w-full">
+      <div class="flex-1 m-4 rounded px-4 sm:px-6 relative h-96 min-h-96 max-h-[300px] bg-cover bg-center" style="background-image: url('./public/images/profile-bg.svg');">
+        <div class="px-5 absolute inset-x-0 top-60 w-full">
+          <div class="max-w-[1598px] bg-white rounded-lg shadow-lg p-6 w-full">
+            <div class="flex items-center relative">
+              <div class="w-fit relative">
+                <img src="./public/images/default.jpg" alt="Profile Picture" class="w-20 h-20 rounded-full mr-4">
+                <div class="absolute bottom-0 right-[20%] -mb-3 -mr-3 bg-white rounded-full p-2 shadow-md">
+                  <svg class="w-5 h-5 text-[#4F94D1]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div>
+                <h1 class="text-2xl font-bold">Esthera Jackson</h1>
+                <p class="text-gray-400">esthera@simmmple.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="max-w-7xl mx-10 px-4 sm:px-6 mt-24 lg:px-0 py-8">
+        <div class="flex flex-col lg:flex-row lg:space-x-6 mb-6">
+          <div class="bg-white rounded-lg shadow-lg p-6 mb-6 lg:mb-0 w-full lg:w-1/2">
+            <h2 class="text-xl font-bold mb-2">Platform Settings</h2>
+            <div class="grid grid-cols-1  gap-4">
+              <div>
+                <h3 class="text-gray-500 font-bold mb-2">Notifications</h3>
+                <div class="flex items-center mb-2">
+                  <label for="follow-me" class="text-gray-500 flex-1 mr-4">Email me when someone follows me</label>
+                  <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                    <input type="checkbox" name="follow-me" id="follow-me" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" checked />
+                    <label for="follow-me" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-400 cursor-pointer"></label>
+                  </div>
+                </div>
+                <div class="flex items-center mb-2">
+                  <label for="answer-post" class="text-gray-500 flex-1 mr-4">Email me when someone answers my post</label>
+                  <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                    <input type="checkbox" name="answer-post" id="answer-post" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" checked />
+                    <label for="answer-post" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-400 cursor-pointer"></label>
+                  </div>
+                </div>
+                <div class="flex items-center mb-2">
+                  <label for="mention-me" class="text-gray-500 flex-1 mr-4">Email me when someone mentions me</label>
+                  <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                    <input type="checkbox" name="mention-me" id="mention-me" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" checked />
+                    <label for="mention-me" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-400 cursor-pointer"></label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-gray-500 font-bold mb-2">Account</h3>
+                <div class="flex items-center mb-2">
+                  <label for="delete-account" class="text-gray-500 flex-1 mr-4">New launches and projects</label>
+                  <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                    <input type="checkbox" name="delete-account" id="delete-account" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                    <label for="delete-account" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-400 cursor-pointer"></label>
+                  </div>
+                </div>
+                <div class="flex items-center mb-2">
+                  <label for="dark-mode" class="text-gray-500 flex-1 mr-4">Monthly product updates</label>
+                  <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                    <input type="checkbox" name="dark-mode" id="dark-mode" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                    <label for="dark-mode" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-400 cursor-pointer"></label>
+                  </div>
+                </div>
+                <div class="flex items-center mb-2">
+                  <label for="dark-mode" class="text-gray-500 flex-1 mr-4">Subscribe to newsletter</label>
+                  <div class="relative inline-block w-10 mr-2 align-middle select-none">
+                    <input type="checkbox" name="dark-mode" id="dark-mode" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" />
+                    <label for="dark-mode" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-400 cursor-pointer"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 w-full lg:w-1/2">
+            <h2 class="text-xl font-bold mb-2">Profile Information</h2>
+            <p class="text-gray-400 mb-6">Hi, I'm Alec Thampian, Dechuans: If you can't decide, the answer is no. If tivo equaly difficult paths, choose the ane mare painful in the short form (pain avoidance is creating an diunion of equality).</p>
+            <div class="border-t border-gray-300 pt-6">
+              <p class="text-gray-400 mb-2">Full Name: Alec M. Thompson</p>
+              <p class="text-gray-400 mb-2">Mobile: (44) 123 1234 123</p>
+              <p class="text-gray-400 mb-2">Email: alecthampton@mail.com</p>
+              <p class="text-gray-400">Location: United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div> 
+
+    <style>
+      .toggle-checkbox:checked {
+        @apply: right-0 border-#4F94D1;
+        right: 0;
+        border-color: #4F94D1;
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        @apply: bg-#4F94D1;
+        background-color: #4F94D1;
+      }
+
+      /* Sidebar styles */
+      .sidebar-link {
+        @apply text-gray-600 hover:text-gray-800 font-bold rounded-lg p-3;
+      }
+      .sidebar-link.active {
+        @apply bg-white shadow-md;
+      }
+    </style>
+  </div>
+</body>
+</html>

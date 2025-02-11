@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles/output.css" rel="stylesheet">
+</head>
+<body class="w-full h-screen flex justify-center items-center">
+   <section class="bg-white w-full h-screen flex flex-col-reverse justify-center items-center">
+        <div class="w-full h-full lg:max-w-[50%] flex justify-center items-center h-screen">
+            <div class="z-[99] lg:mt-[-270px] bg-white rounded-lg w-full py-[36px] px-[51px] lg:max-w-[452px] flex flex-col space-y-[18px] justify-start items-center">
+                <div class="space-y-[12px] w-full flex flex-col">
+                <div class=" w-full flex flex-col">
+                    <p class="ml-[5.5px] mb-[5.5px] font-Alata font-bold text-black text-[14px]">
+                      Name
+                    </p>
+                    <input
+                      type="text"
+                      class="font-Alata w-full px-4 py-3 border-[2px] border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Your name"
+                    />
+                </div>     
+                <div class=" w-full flex flex-col">
+                    <p class="ml-[5.5px] mb-[5.5px] font-Alata font-bold text-black text-[14px]">
+                        Email
+                    </p>
+                    <input
+                        type="email"
+                        class="font-Alata w-full px-4 py-3 border-[2px] border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Your email address"
+                        />
+                </div>
+                <div class=" w-full flex flex-col">
+                        <p class="ml-[5.5px] mb-[5.5px] font-Alata font-bold text-black text-[14px]">
+                        Password
+                        </p>
+                        <input
+                        type="password"
+                        class="font-Alata w-full px-4 py-3 border-[2px] border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                        placeholder="Your password"
+                        />
+                    </div>
+                    <div class="mt-[24px] flex items-center">
+                        <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="w-11 h-6 bg-gray-100 rounded-full peer-focus:ring-4  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#4F94D1]"></div>
+                        <span class="ml-3 text-sm font-medium text-black">Remember me</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="w-full flex justify-center items-center">
+                    <div class="w-full max-w-md">
+                    <a href="./Dashboard.html" class="cursor-pointer bg-[#4F94D1] hover:bg-[#3e7599] text-white font-alata font-bold py-2 px-4 rounded w-full">
+                        SIGN UP
+                    </a>
+                    <div class="text-[#A0AEC0] font-alata mt-4">
+                        Already have an account? <a href="./index.html" class="text-[#4F94D1] hover:underline">Sign in</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="lg:pt-[24px] lg:px-[20px] relative w-full h-[215px] lg:h-[520px]">
+            <img class="lg:rounded-lg object-cover w-full h-full" src="./public/images/signin-bg.svg"/>
+            <div class="lg:pb-[90px] flex flex-col justify-center items-center inset-y-0 lg:inset-y-[35%] inset-x-0 mx-auto absolute w-full h-[174px]">
+                <h1 class="text-[32px] font-bold font-Alata text-white">Welcome!</h1>
+                <p class="w-[334px] text-center text-[14px] font-bold font-Alata text-white">Use these awesome forms to login or create new account in your project for free.</p>
+            </div>
+         </div>
+   </section>
+</body>
+</html>
